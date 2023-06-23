@@ -1,0 +1,109 @@
+/* Variables  */
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Defaults  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h3 {
+    color: var(--cyan);
+}
+
+p {
+    font-size: 18px;
+
+}
+
+.container {
+    display: grid;
+    background: var(--main-bg);
+    place-items: center;
+    padding: 20px 0;
+    width: 100%;
+    color: var(--white);
+    min-height: 100vh;
+}
+
+.container .card {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    font-family: 'Outfit', 'poppins', 'Gill Sans';
+    max-width: 350px;
+}
+
+.card-image>img {
+    width: 100%;
+}
+
+.card-text>h1 {
+    color: var(--white);
+}
+
+.card-text>p,
+.name,
+.time-left {
+    color: var(--soft-blue);
+}
+
+.eth-time {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    border-bottom: 1px solid var(--line);
+    padding: 10px 0;
+    width: 100%;
+}
+
+.eth,
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.eth-time .eth>img,
+.eth-time .time>img {
+    padding-right: 10px;
+    height: 20px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.avator>img {
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+.author small {
+    padding-left: 20px;
+}
+
+.hover:hover {
+    color: var(--cyan);
+}
